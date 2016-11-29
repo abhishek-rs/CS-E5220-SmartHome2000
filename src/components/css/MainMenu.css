@@ -1,0 +1,53 @@
+.MainMenu{
+  width: 95%;
+  height:100%;
+  right:0;
+  background-color: #00C853;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.menu-container{
+  margin: auto;
+  position: relative;
+  top:0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  width:70%;
+  height: 100%;
+}
+
+.menu-options{
+
+  padding:50px;
+  width:28%;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .MainMenu{
+    width: 100%;
+    height:90em;
+    right:0;
+    float:none;
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+
+  .menu-container{
+    top:0;
+  }
+
+  .menu-options {
+
+  }
+
+}

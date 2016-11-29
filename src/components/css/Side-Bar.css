@@ -1,0 +1,44 @@
+.SideBar{
+  width: 5%;
+  background-color: #37474F;
+  float:left;
+  position: fixed;
+  height: 100%;
+  text-align: center;
+
+}
+
+
+.SideBar img{
+  height: 65px;
+  position: relative;
+
+margin: auto;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+li{
+   list-style-type: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .SideBar{
+    width: 100%;
+    float:none;
+    bottom:0;
+    height: 10%;
+    z-index: 999
+  }
+  .SideBar img{
+    height: 35px;
+    padding-top: 5px;
+    padding-right: 25px;
+  }
+
+  .SideBar li {
+    display: inline;
+
+  }
+
+}
