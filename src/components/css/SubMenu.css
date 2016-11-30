@@ -1,0 +1,12 @@
+.SubMenu{
+  width: 95%;
+  height:100%;
+  right:0;
+  background-color: #00C853;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  vertical-align: middle;
+  overflow-y: auto;
+  padding: 20px;
+}

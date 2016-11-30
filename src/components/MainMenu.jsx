@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MainCard from './MainCard.jsx';
 import './css/MainMenu.css';
 import AppLogo from '../logos/house.svg';
-
+import Switch from './Switch.jsx';
 import FavLogo from '../logos/favorite.svg';
 import EmergencyLogo from '../logos/emergency.svg';
 import HelpLogo from '../logos/information.svg';
@@ -20,7 +20,7 @@ class MainMenu extends Component {
             <MainCard title="Alarms" imgpath={AppLogo} val="hello" />
               <MainCard title="Locks" imgpath={HelpLogo} val="hello" />
               <MainCard title="Whatever" imgpath={SettingsLogo} val="hello" />
-
+              <Switch label1="ON" label2="OFFDFFFF" type="square" />
     </div>
 
 

@@ -8,17 +8,20 @@ class MainCard extends Component {
     //  const name = props.name;
     }
 
+
   render() {
     const { title } = this.props;
     const { imgpath } = this.props;
     const { val } = this.props;
+    const path = "#/submenu/" + title;
     return (
+            <a href={path}>
             <div className="col-md-12 col-lg-4 menu-options">
               <h3>{title}</h3>
               <img className="card-image" src={imgpath} />
               <h6>{val}</h6>
             </div>
-
+          </a>
 
 
 
