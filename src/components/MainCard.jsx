@@ -14,19 +14,71 @@ class MainCard extends Component {
     const { imgpath } = this.props;
     const { val } = this.props;
     const path = "#/submenu/" + title;
-    return (
-            <a href={path}>
-            <div className="col-md-12 col-lg-4 menu-options">
-              <h3>{title}</h3>
-              <img className="card-image" src={imgpath} />
-              <h6>{val}</h6>
-            </div>
-          </a>
+    if (title == "AC"){
+      var card = <a href={path}>
+      <div className="col-md-6 col-lg-4 menu-options">
+        <h2>{title}</h2>
+        <img className="card-image" src={imgpath} />
+        <h1>Avge. 21 &#8451;</h1>
+      </div>
+    </a>;
+    }
+    else if (title == "Electrical"){
+       var card = <a href={path}>
+       <div className="col-md-6 col-lg-4 menu-options">
+         <h2>{title}</h2>
+         <img className="card-image" src={imgpath} />
+         <h1>2/10 ON</h1>
+       </div>
+     </a>;
+    }
+    else if (title == "Lighting"){
+       var card = <a href={path}>
+       <div className="col-md-6 col-lg-4 menu-options">
+         <h2>{title}</h2>
+         <img className="card-image" src={imgpath} />
+         <h1>7/10 ON</h1>
+       </div>
+     </a>;
+    }
+    else if (title == "Locks"){
+       var card = <a href={path}>
+       <div className="col-md-6 col-lg-4 menu-options">
+         <h2>{title}</h2>
+         <img className="card-image" src={imgpath} />
+         <h1>Entrance unlocked</h1>
+       </div>
+     </a>;
+    }
+    else if (title == "Smoke detector"){
+       var card = <a href={path}>
+       <div className="col-md-6 col-lg-4 menu-options">
+         <h2>{title}</h2>
+         <img className="card-image" src={imgpath} />
+         <h1>All active</h1>
+       </div>
+     </a>;
+    }
+    else if (title == "Motion detector"){
+       var card = <a href={path}>
+       <div className="col-md-6 col-lg-4 menu-options">
+         <h2>{title}</h2>
+         <img className="card-image" src={imgpath} />
+         <h1>None active</h1>
+       </div>
+     </a>;
+    }
+    else {
+      var card = <a href={path}>
+      <div className="col-md-12 col-lg-4 menu-options">
+        <h2>{title}</h2>
+        <img className="card-image" src={imgpath} />
+        <h1>What</h1>
+      </div>
+      </a>;
+    }
 
-
-
-
-    );
+    return card;
   }
 }
 

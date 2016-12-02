@@ -1,11 +1,10 @@
 .SideBar{
   width: 5%;
-  background-color: #37474F;
+  background-color: #081d38;
   float:left;
   position: fixed;
   height: 100%;
   text-align: center;
-
 }
 
 
@@ -25,8 +24,27 @@ li{
 }
 
 li:hover{
-  background-color: #00C853;
+  background-color: #d3d4d4;
 }
+
+@media only screen and (max-width: 1024px) {
+  .SideBar{
+    width: 8%;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .SideBar{
+    width: 10%;
+
+  }
+
+}
+
+
+
 
 @media only screen and (max-width: 425px) {
   .SideBar{

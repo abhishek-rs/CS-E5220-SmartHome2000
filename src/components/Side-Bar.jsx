@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import AppLogo from '../logos/Logomakr.png';
+import AppLogo from '../logos/Logo.png';
 
-import FavLogo from '../logos/favorite.svg';
-import EmergencyLogo from '../logos/emergency.svg';
-import HelpLogo from '../logos/information.svg';
-import SettingsLogo from '../logos/settings.svg';
+import FavLogo from '../logos/Favoriteblue.png';
+import EmergencyLogo from '../logos/Emerblue.png';
+import HelpLogo from '../logos/Homeblue.png';
+import SettingsLogo from '../logos/Settingblue.png';
 
 import './css/Side-Bar.css';
 

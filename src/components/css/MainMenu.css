@@ -2,7 +2,7 @@
   width: 95%;
   height:100%;
   right:0;
-  background-color: #00C853;
+  background-color: #d3d4d4;
   margin: 0 auto;
   position: fixed;
   text-align: center;
@@ -18,8 +18,24 @@
   bottom: 0;
   left:0;
   right: 0;
-  width:70%;
+  width:80%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .MainMenu{
+    width: 92%;
+  }
+
+  .menu-container{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .MainMenu{
+    width: 90%;
+  }
 }
 
 
