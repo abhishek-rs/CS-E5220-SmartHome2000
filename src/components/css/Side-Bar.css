@@ -10,19 +10,25 @@
 
 
 .SideBar img{
-  height: 65px;
+  height: 40px;
   position: relative;
 
 margin: auto;
-  padding-top: 30px;
   display: inline-block;
 }
 
+
+
 li{
    list-style-type: none;
+   padding:15px;
 }
 
-@media only screen and (max-width: 400px) {
+li:hover{
+  background-color: #00C853;
+}
+
+@media only screen and (max-width: 425px) {
   .SideBar{
     width: 100%;
     float:none;
@@ -32,13 +38,21 @@ li{
   }
   .SideBar img{
     height: 35px;
-    padding-top: 5px;
-    padding-right: 25px;
+    padding:2px;
   }
 
   .SideBar li {
     display: inline;
-
+    padding:8px;
+    top:5px;
+    margin-left: 4px;
+    margin-right: 4px;
+    height:100%;
+    position: relative;
   }
+
+  .SideBar li:hover {
+    background-color: #37474F;
+    }
 
 }

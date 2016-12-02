@@ -4,13 +4,24 @@
   margin: 20px;
   border-radius: 5px;
   background-color: white;
+  -webkit-box-shadow: 5px 4px 5px 1px rgba(0,0,0,0.55);
+-moz-box-shadow: 5px 4px 5px 1px rgba(0,0,0,0.55);
+box-shadow: 5px 4px 5px 1px rgba(0,0,0,0.55);
+text-decoration: none;
+color: black;
+}
+
+.menu-options:hover{
+  -webkit-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
+-moz-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
+box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 }
 
 .menu-options img{
   height:50px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   .menu-options{
     width: 90%;
     margin:12px;

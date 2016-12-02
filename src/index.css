@@ -2,5 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Patua One', cursive;
+  background-color: #444;
+  background: url(https://newevolutiondesigns.com/images/freebies/abstract-background-20.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

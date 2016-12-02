@@ -14,13 +14,14 @@ class MainMenu extends Component {
     return (
       <div className="MainMenu">
         <div className="row menu-container">
+          <Switch label1="Away" label2="Home" type="round" />
           <MainCard title="AC" imgpath={AppLogo} val="hello" />
           <MainCard title="Lighting" imgpath={FavLogo} val="hello" />
             <MainCard title="Electrical" imgpath={SettingsLogo} val="hello" />
             <MainCard title="Alarms" imgpath={AppLogo} val="hello" />
               <MainCard title="Locks" imgpath={HelpLogo} val="hello" />
               <MainCard title="Whatever" imgpath={SettingsLogo} val="hello" />
-              <Switch label1="ON" label2="OFFDFFFF" type="square" />
+
     </div>
 
 

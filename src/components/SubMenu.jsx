@@ -15,8 +15,15 @@ class SubMenu extends Component {
       <div className="Sub">
         <SideBar />
       <div className="SubMenu">
-
-      <h1> this is {this.props.params.subId} </h1>
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <MainCard title="Hall" imgpath={AppLogo} val="hello" />
+        <MainCard title="Bedroom" imgpath={FavLogo} val="hello" />
+          <MainCard title="Balcony" imgpath={SettingsLogo} val="hello" />
+          <MainCard title="Alarms" imgpath={AppLogo} val="hello" />
+            <MainCard title="Locks" imgpath={HelpLogo} val="hello" />
+            <MainCard title="Whatever" imgpath={SettingsLogo} val="hello" />
+            </div>
       </div>
     </div>
 

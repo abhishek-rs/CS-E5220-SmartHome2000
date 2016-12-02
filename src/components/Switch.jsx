@@ -15,22 +15,26 @@ class Switch extends Component {
 
     if(type == 'square'){
     var myswitch = <div className="mySwitch">
+<label id="name">{label1}</label>
     <label className="switch">
-      <label>{label1}</label>
+
       <input type="checkbox" />
       <div className="slider"></div>
-      <label>{label2}</label>
+
     </label>
+    <label id="name">{label2}</label>
   </div>;
 }
 else {
     var myswitch = <div className="mySwitch">
+<label id="name">{label1}</label>
     <label className="switch">
-      <label>{label1}</label>
+
       <input type="checkbox" />
       <div className="slider round"></div>
-      <label>{label2}</label>
+
     </label>
+    <label id="name">{label2}</label>
   </div>;
 }
 
