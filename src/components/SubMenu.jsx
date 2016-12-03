@@ -8,11 +8,32 @@ import EmergencyLogo from '../logos/emergency.svg';
 import HelpLogo from '../logos/information.svg';
 import SettingsLogo from '../logos/settings.svg';
 import SideBar from './Side-Bar.jsx';
-
+import ArrowsUpLogo from '../logos/up.png';
+import ArrowsDownLogo from '../logos/down.png';
+import SubCard from './SubCard.jsx';
+import toastr from 'toastr';
 class SubMenu extends Component {
   render() {
-    return (
-      <div className="Sub">
+
+    const titles = this.props.params.subId;
+    if(titles == "AC"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo} imgpath2={ArrowsDownLogo} val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo} imgpath2={ArrowsDownLogo} val="Bedroom 1" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} imgpath2={ArrowsDownLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} imgpath2={ArrowsDownLogo} val="Dining Area" />
+            <SubCard title={titles} imgpath={ArrowsUpLogo} imgpath2={ArrowsDownLogo} val="Kitchen" />
+
+            </div>
+      </div>
+    </div>;
+    }
+    else {
+      var content = <div className="Sub">
         <SideBar />
       <div className="SubMenu">
         <div className="row menu-container">
@@ -25,11 +46,9 @@ class SubMenu extends Component {
             <MainCard title="Whatever" imgpath={SettingsLogo} val="hello" />
             </div>
       </div>
-    </div>
-
-
-
-    );
+    </div>;
+    }
+    return content;
   }
 }
 

@@ -1,6 +1,6 @@
-.menu-options{
+.sub-options{
   padding:40px;
-  width:28%;
+  width:45%;
   margin: 15px;
   border-radius: 5px;
   background-color: white;
@@ -12,38 +12,39 @@ color: #081d38;
 font-family: 'Oswald', sans-serif;
 }
 
-.menu-options:hover{
+.sub-options:hover{
   -webkit-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 -moz-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 }
 
-.menu-options img{
-  height:70px;
+.sub-options img{
+  height:50px;
   float : right;
   display: inline-block;
-  width:40%;
+  width:50px;
   padding:5px;
   margin-left: 10px;
   vertical-align: middle;
   margin-top: 10px;
 }
 
-.menu-options h1{
+.sub-options h1{
   float:left;
   width:50%;
   font-size: 30px;
   font-weight: lighter;
   height:100%;
+  display: inline-block;
   font-family: 'Exo', sans-serif;
 }
 
 @media only screen and (max-width: 1024px) {
-  .menu-options{
+  .sub-options{
     width: 29%;
     min-height: 300px;
   }
-  .menu-options h1{
+  .sub-options h1{
 
 
     font-size: 20px;
@@ -51,19 +52,19 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 }
 
 @media only screen and (max-width: 768px) {
-  .menu-options{
+  .sub-options{
     width: 42%;
     display: inline-block;
     min-height: 300px;
   }
 
-  .menu-options img{
+  .sub-options img{
     height: 50px;
     width:50px;
     float: none;
   }
 
-  .menu-options h1{
+  .sub-options h1{
     float:none;
     width: auto;
     font-size: 20px;
@@ -74,7 +75,7 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 
 
 @media only screen and (max-width: 425px) {
-  .menu-options{
+  .sub-options{
     width: 90%;
     margin:12px;
     margin-left: 14px;
@@ -82,17 +83,17 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
     text-align: center;
     min-height: 150px;
   }
-.menu-options h2{
+.sub-options h2{
   font-size: 20px;
 }
 
-  .menu-options img{
+  .sub-options img{
     height: 50px;
     width:50px;
     float: none;
   }
 
-  .menu-options h1{
+  .sub-options h1{
     float:none;
     width: auto;
     font-size: 20px;
