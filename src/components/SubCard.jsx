@@ -8,6 +8,15 @@ class SubCard extends Component {
     //  const name = props.name;
     }
 
+    changetemp(temp, type){
+      if(type == "up"){
+        temp = temp+1;
+      }
+      else{
+        temp = temp -1;
+      }
+      document.getElementById('temp').innerHTML = temp.toString() + " &#8451;";
+    }
 
   render() {
     const { title } = this.props;
@@ -20,10 +29,12 @@ class SubCard extends Component {
       <div className="col-md-12 col-lg-6 sub-options AC-button">
         <h2>{val}</h2>
         <Switch title={val} label1="OFF" label2="ON" type="round" />
-        <img className="sub-card-image" src={imgpath} />
-        <h1>21 &#8451;</h1>
-        <img className="sub-card-image" src={imgpath} />
-      </div>
+        <div className="updown">
+        <img className="sub-card-down" src={imgpath} onClick={() => this.changetemp(21, "up")}/>
+        <h1 id="temp">21 &#8451;</h1>
+        <img className="sub-card-image" src={imgpath2} onClick={() => this.changetemp(21, "down")}/>
+        </div>
+    </div>
     </a>;
     }
     else if (title == "Electrical"){

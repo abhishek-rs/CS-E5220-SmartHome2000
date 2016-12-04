@@ -12,6 +12,22 @@ color: #081d38;
 font-family: 'Oswald', sans-serif;
 }
 
+.sub-card-down{
+
+  }
+
+.sub-card-image{
+
+}
+
+.updown{
+  display: block;
+  width:50%;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
 .sub-options:hover{
   -webkit-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 -moz-box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
@@ -20,22 +36,22 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 
 .sub-options img{
   height:50px;
-  float : right;
-  display: inline-block;
+
   width:50px;
   padding:5px;
   margin-left: 10px;
   vertical-align: middle;
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .sub-options h1{
-  float:left;
+
   width:50%;
   font-size: 30px;
   font-weight: lighter;
   height:100%;
-  display: inline-block;
+  display: block;
+  margin: auto;
   font-family: 'Exo', sans-serif;
 }
 

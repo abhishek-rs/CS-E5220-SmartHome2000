@@ -29,14 +29,14 @@ class Switch extends Component {
       }
     }
 
-    toaster(){
+    toaster(type){
 
       if (count%2 == 1){
-        toastr.success('Turned on');
+        toastr.success(type, 'Turned on');
         count++;
       }
       else {
-        toastr.error('Turned off');
+        toastr.error(type, 'Turned off');
         count--;
       }
     }
@@ -69,7 +69,7 @@ else {
     <label className="switch">
 
       <input type="checkbox" />
-      <div className="slider round" onClick={this.toaster}></div>
+      <div className="slider round" onClick={() => this.toaster(title)}></div>
 
     </label>
     <label id="name">{label2}</label>
