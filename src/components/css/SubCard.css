@@ -57,7 +57,7 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 
 @media only screen and (max-width: 1024px) {
   .sub-options{
-    width: 29%;
+    width: 45%;
     min-height: 300px;
   }
   .sub-options h1{

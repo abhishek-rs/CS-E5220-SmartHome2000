@@ -37,16 +37,15 @@ class SubCard extends Component {
     </div>
     </a>;
     }
-    else if (title == "Electrical"){
+    else if (title == "Lighting"){
        var card = <a href={path}>
-       <div className="col-md-12 col-lg-6 sub-options">
-         <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
-         <h1>2/10 ON</h1>
+       <div className="col-md-12 col-lg-6 menu-options">
+         <h2>{val}</h2>
+         <Switch title={val} label1="OFF" label2="ON" type="round" />
        </div>
      </a>;
     }
-    else if (title == "Lighting"){
+    else if (title == "Electrical"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 sub-options">
          <h2>{title}</h2>
@@ -57,28 +56,26 @@ class SubCard extends Component {
     }
     else if (title == "Locks"){
        var card = <a href={path}>
-       <div className="col-md-12 col-lg-6 sub-options">
-         <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
-         <h1>Entrance unlocked</h1>
+       <div className="col-md-12 col-lg-6 menu-options">
+         <h2>{val}</h2>
+           <Switch title={val} label1="LOCKED" label2="UNLOCKED" type="round" />
        </div>
      </a>;
     }
     else if (title == "Smoke detector"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
-         <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
-         <h1>All active</h1>
+         <h2>{val}</h2>
+           <Switch title={val} label1="OFF" label2="ON" type="round" />
        </div>
      </a>;
     }
     else if (title == "Motion detector"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
-         <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
-         <h1>None active</h1>
+         <h2>{val}</h2>
+           <Switch title={val} label1="OFF" label2="ON" type="round" />
+
        </div>
      </a>;
     }

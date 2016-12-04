@@ -32,6 +32,83 @@ class SubMenu extends Component {
       </div>
     </div>;
     }
+    else if(titles == "Lighting"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Bedroom 1" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Dining Area" />
+            <SubCard title={titles} imgpath={ArrowsUpLogo} val="Kitchen" />
+
+            </div>
+      </div>
+    </div>;
+    }
+    else if(titles == "Electrical"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Bedroom 1" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Dining Area" />
+            <SubCard title={titles} imgpath={ArrowsUpLogo} val="Kitchen" />
+
+            </div>
+      </div>
+    </div>;
+    }
+    else if(titles == "Locks"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Bedroom 1" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Balcony" />
+
+            </div>
+      </div>
+    </div>;
+    }
+    else if(titles == "Smoke detector"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Bedroom 1" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Kitchen" />
+
+            </div>
+      </div>
+    </div>;
+    }
+    else if(titles == "Motion detector"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Hall" />
+        <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Dining area" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo} val="Bedroom 2" />
+          <SubCard title={titles} imgpath={ArrowsUpLogo}  val="Balcony" />
+
+            </div>
+      </div>
+    </div>;
+    }
     else {
       var content = <div className="Sub">
         <SideBar />
