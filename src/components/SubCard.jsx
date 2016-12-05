@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Switch from './Switch.jsx';
+import ArrowsUpLogo from '../logos/up.png';
+import ArrowsDownLogo from '../logos/down.png';
 import './css/SubCard.css';
 
 class SubCard extends Component {
@@ -30,7 +32,7 @@ class SubCard extends Component {
         <h2>{val}</h2>
         <Switch title={val} label1="OFF" label2="ON" type="round" />
         <div className="updown">
-        <img className="sub-card-down" src={imgpath} onClick={() => this.changetemp(21, "up")}/>
+        <img className="sub-card-image" src={imgpath} onClick={() => this.changetemp(21, "up")}/>
         <h1 id="temp">21 &#8451;</h1>
         <img className="sub-card-image" src={imgpath2} onClick={() => this.changetemp(21, "down")}/>
         </div>
@@ -46,14 +48,92 @@ class SubCard extends Component {
      </a>;
     }
     else if (title == "Electrical"){
+      if( val === "TV")
+      {
        var card = <a href={path}>
-       <div className="col-md-12 col-lg-6 sub-options">
-         <h2>{title}</h2>
+       <div className="col-md-12 col-lg-6 elec">
+         <h2>{val}</h2>
          <img className="card-image" src={imgpath} />
-         <h1>7/10 ON</h1>
+         <Switch title={val} label1="OFF" label2="ON" type="round" />
+           <img className="sub-card-image" src={ArrowsUpLogo} />
+           <h1 id="temp">ESPN</h1>
+           <img className="sub-card-image" src={ArrowsDownLogo} />
+          <div style={{'border-radius': '5px', padding:'10px', color:'white','background-color': '#081d38', width:"80%", margin:'auto'}} >
+         <label>Volume</label><input  id="vol-control" type="range" min="0" max="100" step="1"></input>
+</div>
        </div>
      </a>;
-    }
+   }
+
+   else if ( val === "Refrigerator")
+   {
+    var card = <a href={path}>
+    <div className="col-md-12 col-lg-6 elec">
+      <h2>{val}</h2>
+      <img className="card-image" src={imgpath} />
+      <Switch title={val} label1="OFF" label2="ON" type="round" />
+        <img className="sub-card-image" src={ArrowsUpLogo} />
+        <h1 id="temp">3 &#8451;</h1>
+        <img className="sub-card-image" src={ArrowsDownLogo} />
+
+    </div>
+  </a>;
+}
+else if ( val === "Freezer")
+{
+ var card = <a href={path}>
+ <div className="col-md-12 col-lg-6 elec">
+   <h2>{val}</h2>
+   <img className="card-image" src={imgpath} />
+   <Switch title={val} label1="OFF" label2="ON" type="round" />
+     <img className="sub-card-image" src={ArrowsUpLogo} />
+     <h1 id="temp">-5 &#8451;</h1>
+     <img className="sub-card-image" src={ArrowsDownLogo} />
+
+ </div>
+</a>;
+}
+else if ( val === "Stove")
+{
+ var card = <a href={path}>
+ <div className="col-md-12 col-lg-6 elec">
+   <h2>{val}</h2>
+   <img className="card-image" src={imgpath} /> <br />
+   <div className="stove">
+     <img className="sub-card-image" src={ArrowsUpLogo} />
+     <h1 id="temp">0</h1>
+     <img className="sub-card-image" src={ArrowsDownLogo} />
+   </div>
+<div className="stove">
+       <img className="sub-card-image" src={ArrowsUpLogo} />
+     <h1 id="temp">0</h1>
+     <img className="sub-card-image" src={ArrowsDownLogo} />
+   </div> <br />
+<div className="stove">
+       <img className="sub-card-image" src={ArrowsUpLogo} />
+     <h1 id="temp">0</h1>
+     <img className="sub-card-image" src={ArrowsDownLogo} />
+   </div>
+<div className="stove">
+       <img className="sub-card-image" src={ArrowsUpLogo} />
+     <h1 id="temp">0</h1>
+     <img className="sub-card-image" src={ArrowsDownLogo} />
+   </div>
+ </div>
+</a>;
+}
+
+   else {
+     var card = <a href={path}>
+     <div className="col-md-12 col-lg-6 sub-options">
+       <h2>{val}</h2>
+       <img className="card-image" src={imgpath} />
+       <Switch title={val} label1="OFF" label2="ON" type="round" />
+       </div>
+     </a>;
+ }
+}
+    
     else if (title == "Locks"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
@@ -71,6 +151,15 @@ class SubCard extends Component {
      </a>;
     }
     else if (title == "Motion detector"){
+       var card = <a href={path}>
+       <div className="col-md-12 col-lg-6 menu-options">
+         <h2>{val}</h2>
+           <Switch title={val} label1="OFF" label2="ON" type="round" />
+
+       </div>
+     </a>;
+    }
+    else if (title == "favorites"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
          <h2>{val}</h2>

@@ -3,7 +3,7 @@ import AppLogo from '../logos/Logo.png';
 
 import FavLogo from '../logos/Favoriteblue.png';
 import EmergencyLogo from '../logos/Emerblue.png';
-import HelpLogo from '../logos/Homeblue.png';
+import HelpLogo from '../logos/Help.png';
 import SettingsLogo from '../logos/Settingblue.png';
 
 import './css/Side-Bar.css';
