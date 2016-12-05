@@ -133,7 +133,7 @@ else if ( val === "Stove")
      </a>;
  }
 }
-    
+
     else if (title == "Locks"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
@@ -159,7 +159,7 @@ else if ( val === "Stove")
        </div>
      </a>;
     }
-    else if (title == "favorites"){
+    else if (title == "Favorites"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 menu-options">
          <h2>{val}</h2>
@@ -168,6 +168,43 @@ else if ( val === "Stove")
        </div>
      </a>;
     }
+    else if (title == "Settings"){
+       var card = <a href={path}>
+       <div className="col-md-12 col-lg-6 onecard">
+         <h2>{val}</h2>
+
+             <label>Old Password:</label><input type="password" />
+             <br />
+           <label>New Password:</label><input type="password" />
+           <br />
+             <label>Retype Password:</label><input type="password" />
+             <br />
+             <div className="dropdown">
+         <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Change Language
+         <span className="caret"></span></button>
+         <ul className="dropdown-menu">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Swedish</a></li>
+          <li><a href="#">Finnish</a></li>
+         </ul>
+         <br />
+         <br />
+         <label >Temperature unit:</label>
+         <Switch title={val} label1="Celsius" label2="Fahrenheit" type="round" />
+         </div>
+
+       </div>
+     </a>;
+    }
+
+    else if (title == "Help"){
+       var card = <a href={path}>
+       <div className="col-md-12 col-lg-6 onecard">
+         <img className="map" src={imgpath} />
+       </div>
+     </a>;
+    }
+
     else {
       var card = <a href={path}>
       <div className="col-md-12 col-lg-6 menu-options">

@@ -12,6 +12,12 @@ color: #081d38;
 font-family: 'Oswald', sans-serif;
 }
 
+.map{
+  min-height: 275px;
+  min-width: 275px;
+  max-height: 500px;
+
+}
 .elec{
   width:95%;
   padding:40px;
@@ -25,6 +31,21 @@ text-decoration: none;
 color: #081d38;
 font-family: 'Oswald', sans-serif;
 }
+
+.onecard{
+  width:95%;
+  padding:20px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(8,29,56,1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(8,29,56,1);
+  box-shadow: 5px 5px 5px 0px rgba(8,29,56,1);
+text-decoration: none;
+color: #081d38;
+font-family: 'Oswald', sans-serif;
+}
+
 
 .sub-card-image{
   height:50px;
@@ -82,6 +103,12 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
     width: 45%;
     min-height: 300px;
   }
+
+  .elec{
+    width: 95%;
+    min-height: 400px;
+  }
+
   .sub-options h1 , .elec h1{
 
 
@@ -144,6 +171,8 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
     font-size: 20px;
   }
 
-
+.onecard{
+  min-height: 100%;
+}
 
 }
