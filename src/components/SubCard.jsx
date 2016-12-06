@@ -86,9 +86,9 @@ else if ( val === "Freezer")
    <h2>{val}</h2>
    <img className="card-image" alt="Freezer logo" src={imgpath} />
    <Switch title={val} label1="OFF" label2="ON" type="round" />
-     <img className="sub-card-image" src={ArrowsUpLogo} />
+     <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
      <h1 id="temp">-5 &#8451;</h1>
-     <img className="sub-card-image" src={ArrowsDownLogo} />
+     <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
 
  </div>
 </a>;
@@ -98,26 +98,26 @@ else if ( val === "Stove")
  var card = <a href={path}>
  <div className="col-md-12 col-lg-6 elec">
    <h2>{val}</h2>
-   <img className="card-image" src={imgpath} /> <br />
+   <img className="card-image" src={imgpath} alt="Stove"/> <br />
    <div className="stove">
-     <img className="sub-card-image" src={ArrowsUpLogo} />
+     <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
      <h1 id="temp">0</h1>
-     <img className="sub-card-image" src={ArrowsDownLogo} />
+     <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
    </div>
 <div className="stove">
-       <img className="sub-card-image" src={ArrowsUpLogo} />
+       <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
      <h1 id="temp">0</h1>
-     <img className="sub-card-image" src={ArrowsDownLogo} />
+     <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
    </div> <br />
 <div className="stove">
-       <img className="sub-card-image" src={ArrowsUpLogo} />
+       <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
      <h1 id="temp">0</h1>
-     <img className="sub-card-image" src={ArrowsDownLogo} />
+     <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
    </div>
 <div className="stove">
-       <img className="sub-card-image" src={ArrowsUpLogo} />
+       <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
      <h1 id="temp">0</h1>
-     <img className="sub-card-image" src={ArrowsDownLogo} />
+     <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
    </div>
  </div>
 </a>;
@@ -127,7 +127,7 @@ else if ( val === "Stove")
      var card = <a href={path}>
      <div className="col-md-12 col-lg-6 sub-options">
        <h2>{val}</h2>
-       <img className="card-image" src={imgpath} />
+       <img className="card-image" src={imgpath} alt="unknowm"/>
        <Switch title={val} label1="OFF" label2="ON" type="round" />
        </div>
      </a>;
@@ -203,7 +203,7 @@ else if ( val === "Stove")
     else if (title == "Help"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 onecard">
-         <img className="map" src={imgpath} /><br /> <br />
+         <img className="map" src={imgpath} alt="house map" /><br /> <br />
          <button className="btn btn-info">Contact Support</button>
        </div>
      </a>;
@@ -224,7 +224,7 @@ else if ( val === "Stove")
       var card = <a href={path}>
       <div className="col-md-12 col-lg-6 menu-options">
         <h2>{title}</h2>
-        <img className="card-image" src={imgpath} />
+        <img className="card-image" alt="unknown" src={imgpath} />
         <h1>What</h1>
       </div>
       </a>;

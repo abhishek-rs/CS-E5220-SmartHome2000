@@ -18,7 +18,7 @@ class MainCard extends Component {
       var card = <a href={path}>
       <div className="col-md-6 col-lg-4 menu-options">
         <h2>{title}</h2>
-        <img className="card-image" src={imgpath} />
+        <img className="card-image" alt="Air conditioner logo" src={imgpath} />
         <h1>Avge. 21 &#8451;</h1>
       </div>
     </a>;
@@ -27,7 +27,7 @@ class MainCard extends Component {
        var card = <a href={path}>
        <div className="col-md-6 col-lg-4 menu-options">
          <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" alt="Electricity devices logo" src={imgpath} />
          <h1>2/10 ON</h1>
        </div>
      </a>;
@@ -36,7 +36,7 @@ class MainCard extends Component {
        var card = <a href={path}>
        <div className="col-md-6 col-lg-4 menu-options">
          <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" alt="Lighting devices logo" src={imgpath} />
          <h1>7/10 ON</h1>
        </div>
      </a>;
@@ -45,7 +45,7 @@ class MainCard extends Component {
        var card = <a href={path}>
        <div className="col-md-6 col-lg-4 menu-options">
          <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" alt="Locks logo" src={imgpath} />
          <h1>Entrance unlocked</h1>
        </div>
      </a>;
@@ -54,7 +54,7 @@ class MainCard extends Component {
        var card = <a href={path}>
        <div className="col-md-6 col-lg-4 menu-options">
          <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" alt="Smoke detector logo" src={imgpath} />
          <h1>All active</h1>
        </div>
      </a>;
@@ -63,7 +63,7 @@ class MainCard extends Component {
        var card = <a href={path}>
        <div className="col-md-6 col-lg-4 menu-options">
          <h2>{title}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" alt="Motion detector logo" src={imgpath} />
          <h1>None active</h1>
        </div>
      </a>;

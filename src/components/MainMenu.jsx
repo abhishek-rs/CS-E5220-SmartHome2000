@@ -21,12 +21,12 @@ class MainMenu extends Component {
       <div className="MainMenu">
         <div className="row menu-container">
           <Switch  label1="Away" label2="Home" type="square" />
-          <MainCard onClick={this.toaster} title="AC" imgpath={ACLogo} val="hello" />
-          <MainCard title="Lighting" imgpath={LightLogo} val="hello" />
-            <MainCard title="Electrical" imgpath={ElecLogo} val="hello" />
-              <MainCard title="Locks" imgpath={LockLogo} val="hello" />
-          <MainCard title="Motion detector" imgpath={MotionLogo} val="hello" />
-              <MainCard title="Smoke detector" imgpath={SmokeLogo} val="hello" />
+          <MainCard onClick={this.toaster} title="AC" imgpath={ACLogo}  val="hello" />
+          <MainCard title="Lighting" imgpath={LightLogo}  val="hello" />
+            <MainCard title="Electrical" imgpath={ElecLogo}  val="hello" />
+              <MainCard title="Locks" imgpath={LockLogo}  val="hello" />
+          <MainCard title="Motion detector" imgpath={MotionLogo}  val="hello" />
+              <MainCard title="Smoke detector" imgpath={SmokeLogo} val="hello"  />
 
     </div>
 
