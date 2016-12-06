@@ -19,6 +19,8 @@ import WashingLogo from '../logos/Washing.png';
 import SubCard from './SubCard.jsx';
 import HelpMap from '../logos/Helpmap.jpg';
 import toastr from 'toastr';
+import Profile from '../logos/profile.jpg';
+
 class SubMenu extends Component {
   render() {
 
@@ -173,6 +175,18 @@ class SubMenu extends Component {
         <div className="row menu-container">
         <h1>{this.props.params.subId}</h1>
         <SubCard title={titles} imgpath={HelpMap}  val="" />
+        </div>
+      </div>
+    </div>;
+    }
+
+    else if(titles == "Profile"){
+      var content = <div className="Sub">
+        <SideBar />
+      <div className="SubMenu">
+        <div className="row menu-container">
+        <h1>{this.props.params.subId}</h1>
+        <SubCard title={titles} imgpath={Profile}  val="" />
         </div>
       </div>
     </div>;

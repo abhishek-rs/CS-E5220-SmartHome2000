@@ -46,6 +46,10 @@ color: #081d38;
 font-family: 'Oswald', sans-serif;
 }
 
+.onecard img{
+
+
+}
 
 .sub-card-image{
   height:50px;
@@ -174,5 +178,8 @@ box-shadow: 5px 4px 5px 1px rgba(122,118,122,1);
 .onecard{
   min-height: 100%;
 }
+.onecard img{
+  max-height: 100px;
 
+}
 }

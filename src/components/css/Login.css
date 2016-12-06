@@ -45,3 +45,8 @@
     .row-fluid .user-row{
       background-color: rgba(0, 0, 0, 0.75);
     }
+
+    .user-row img{
+      height:200px;
+      margin: auto;
+    }

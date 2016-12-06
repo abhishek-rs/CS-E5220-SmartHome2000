@@ -32,9 +32,9 @@ class SubCard extends Component {
         <h2>{val}</h2>
         <Switch title={val} label1="OFF" label2="ON" type="round" />
         <div className="updown">
-        <img className="sub-card-image" src={imgpath} onClick={() => this.changetemp(21, "up")}/>
+        <img className="sub-card-image" src={imgpath} alt="Up arrow logo" onClick={() => this.changetemp(21, "up")}/>
         <h1 id="temp">21 &#8451;</h1>
-        <img className="sub-card-image" src={imgpath2} onClick={() => this.changetemp(21, "down")}/>
+        <img className="sub-card-image" src={imgpath2} alt="Down arrow logo" onClick={() => this.changetemp(21, "down")}/>
         </div>
     </div>
     </a>;
@@ -53,11 +53,11 @@ class SubCard extends Component {
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 elec">
          <h2>{val}</h2>
-         <img className="card-image" src={imgpath} />
+         <img className="card-image" src={imgpath} alt="TV logo"/>
          <Switch title={val} label1="OFF" label2="ON" type="round" />
-           <img className="sub-card-image" src={ArrowsUpLogo} />
-           <h1 id="temp">ESPN</h1>
-           <img className="sub-card-image" src={ArrowsDownLogo} />
+           <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
+           <h4 id="temp">ESPN</h4>
+           <img className="sub-card-image" src={ArrowsDownLogo} alt="Down arrow logo" />
           <div style={{'border-radius': '5px', padding:'10px', color:'white','background-color': '#081d38', width:"80%", margin:'auto'}} >
          <label>Volume</label><input  id="vol-control" type="range" min="0" max="100" step="1"></input>
 </div>
@@ -70,11 +70,11 @@ class SubCard extends Component {
     var card = <a href={path}>
     <div className="col-md-12 col-lg-6 elec">
       <h2>{val}</h2>
-      <img className="card-image" src={imgpath} />
+      <img className="card-image" alt="Refrigerator logo" src={imgpath} />
       <Switch title={val} label1="OFF" label2="ON" type="round" />
-        <img className="sub-card-image" src={ArrowsUpLogo} />
+        <img className="sub-card-image" alt="Up arrow logo" src={ArrowsUpLogo} />
         <h1 id="temp">3 &#8451;</h1>
-        <img className="sub-card-image" src={ArrowsDownLogo} />
+        <img className="sub-card-image" alt="Down arrow logo" src={ArrowsDownLogo} />
 
     </div>
   </a>;
@@ -84,7 +84,7 @@ else if ( val === "Freezer")
  var card = <a href={path}>
  <div className="col-md-12 col-lg-6 elec">
    <h2>{val}</h2>
-   <img className="card-image" src={imgpath} />
+   <img className="card-image" alt="Freezer logo" src={imgpath} />
    <Switch title={val} label1="OFF" label2="ON" type="round" />
      <img className="sub-card-image" src={ArrowsUpLogo} />
      <h1 id="temp">-5 &#8451;</h1>
@@ -164,21 +164,23 @@ else if ( val === "Stove")
        <div className="col-md-12 col-lg-6 menu-options">
          <h2>{val}</h2>
            <Switch title={val} label1="OFF" label2="ON" type="round" />
-
+           <button className ="btn btn-danger">Delete</button>
        </div>
      </a>;
     }
     else if (title == "Settings"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 onecard">
-         <h2>{val}</h2>
 
-             <label>Old Password:</label><input type="password" />
+              <label>Change password</label><br />
+             <label>Old Password:</label><input type="password" placeholder="min 8 characters"/>
              <br />
-           <label>New Password:</label><input type="password" />
+           <label>New Password:</label><input type="password" placeholder="min 8 characters"/>
            <br />
-             <label>Retype Password:</label><input type="password" />
+             <label>Retype Password:</label><input type="password" placeholder="min 8 characters"/><br />
+             <button className="btn btn-success"> Change</button>
              <br />
+           <br />
              <div className="dropdown">
          <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Change Language
          <span className="caret"></span></button>
@@ -187,11 +189,12 @@ else if ( val === "Stove")
           <li><a href="#">Swedish</a></li>
           <li><a href="#">Finnish</a></li>
          </ul>
+       </div>
          <br />
          <br />
          <label >Temperature unit:</label>
          <Switch title={val} label1="Celsius" label2="Fahrenheit" type="round" />
-         </div>
+
 
        </div>
      </a>;
@@ -200,7 +203,19 @@ else if ( val === "Stove")
     else if (title == "Help"){
        var card = <a href={path}>
        <div className="col-md-12 col-lg-6 onecard">
-         <img className="map" src={imgpath} />
+         <img className="map" src={imgpath} /><br /> <br />
+         <button className="btn btn-info">Contact Support</button>
+       </div>
+     </a>;
+    }
+
+    else if (title == "Profile"){
+       var card = <a href={path}>
+       <div className="col-md-12 col-lg-6 onecard">
+         <h2>Hello Donald!</h2>
+         <img className="map" src={imgpath} alt="Profile photo"/><br /><br />
+         <button className="btn btn-danger">Logout</button><br /><br />
+
        </div>
      </a>;
     }
